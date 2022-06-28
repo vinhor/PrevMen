@@ -11,8 +11,8 @@
 }
 
 body {
-  background: #b8b8b8;
   font-family: "Comfortaa light", Ubuntu, Roboto, sans-serif;
+  background: #0b0e31;
   color: rgb(149, 153, 158);
   text-align: center;
   max-width: 1000px;
