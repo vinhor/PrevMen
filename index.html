@@ -35,6 +35,29 @@
           <button id="btnEvropa" class="one neaktivni">Evropské</button>
           <button id="btnZbytek" class="two neaktivni">Ostatní</button>
         </div>
+        <select id="slctEvropa">
+          <option value="0" selected>Vyberte převod</option>
+          <option value="1">€ - Kč</option>
+          <option value="2">&pound - Kč</option>
+          <option value="3">₴ - Kč</option>
+          <option value="4">Fr. - Kč</option>
+          <option value="5">kr - Kč</option>
+        </select>
+        <select id="slctZbytek">
+          <option value="0" selected>Vyberte převod</option>
+          <option value="1">$ - Kč</option>
+        </select>
+        <p id="pInput">
+          <br />
+          <input type="text" id="vlevo" />
+          <label for="vlevo" id="lvlevo"></label> =
+          <input type="text" id="vpravo" />
+          <label for="vpravo" id="lvpravo"></label>
+          <br />
+          <button id="btnPrevod">Převést</button>
+          <br />
+          <span id="upozorneni"></span>
+        </p>
       </section>
     </article>
   </body>
