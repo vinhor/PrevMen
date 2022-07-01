@@ -10,7 +10,7 @@ window.onload = function () {
   let pInput = document.getElementById("pInput");
 
   const requestURL =
-    "https://api.exchangerate.host/latest?base=CZK&symbols=EUR,USD,GBP,UAH,CHF,SEK,JPY,CAD";
+    "https://api.exchangerate.host/latest?base=CZK&symbols=EUR,USD,GBP,UAH,CHF,SEK,JPY,CAD,AUD";
   let request = new XMLHttpRequest();
   request.responseType = "json";
   request.onload = () => {
@@ -23,6 +23,7 @@ window.onload = function () {
     sekkc = new Prevod(request.response.rates.SEK);
     jpykc = new Prevod(request.response.rates.JPY);
     cadkc = new Prevod(request.response.rates.CAD);
+    audkc = new Prevod(request.response.rates.AUD);
   };
   request.open("GET", requestURL);
   request.send();
@@ -115,6 +116,9 @@ window.onload = function () {
     } else if (slctZbytek.value == 3) {
       lvlevo.innerHTML = "C$";
       lvpravo.innerHTML = "Kč";
+    } else if (slctZbytek.value == 4) {
+      lvlevo.innerHTML = "A$";
+      lvpravo.innerHTML = "Kč";
     }
   };
 
@@ -145,6 +149,8 @@ window.onload = function () {
       jpykc.meny();
     } else if (slctZbytek.value == 3) {
       cadkc.meny();
+    } else if (slctZbytek.value == 4) {
+      audkc.meny();
     }
   }
 };
