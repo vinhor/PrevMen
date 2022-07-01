@@ -136,7 +136,7 @@ window.onload = function () {
   }
 
   function vyberZbytek() {
-    upozorneni.innerHTML = "Nevybrali jste si převod!";
+    upozorneni.innerHTML = "";
     if (slctZbytek.value == 0) {
       upozorneni.innerHTML = "Nevybrali jste si převod!";
     } else if (slctZbytek.value == 1) {
