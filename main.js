@@ -58,9 +58,7 @@ window.onload = function () {
     slctZbytek.style.display = "none";
     btnEvropa.className = "one aktivni";
     btnZbytek.className = "two neaktivni";
-    if (pInput.style.display == "none") {
-      pInput.style.display = "inline";
-    }
+    pInput.style.display = "inline";
     btnPrevod.onclick = vyberEvropa;
   };
 
@@ -74,9 +72,7 @@ window.onload = function () {
     slctZbytek.style.display = "inline";
     btnEvropa.className = "one neaktivni";
     btnZbytek.className = "two aktivni";
-    if (pInput.style.display == "none") {
-      pInput.style.display = "inline";
-    }
+    pInput.style.display = "inline";
     btnPrevod.onclick = vyberZbytek;
   };
 
