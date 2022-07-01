@@ -58,6 +58,7 @@ window.onload = function () {
     if (pInput.style.display == "none") {
       pInput.style.display = "inline";
     }
+    btnPrevod.onclick = vyberEvropa;
   };
 
   btnZbytek.onclick = function () {
@@ -73,6 +74,7 @@ window.onload = function () {
     if (pInput.style.display == "none") {
       pInput.style.display = "inline";
     }
+    btnPrevod.onclick = vyberZbytek;
   };
 
   slctEvropa.onchange = function () {
