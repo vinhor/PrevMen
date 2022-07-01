@@ -74,4 +74,66 @@ window.onload = function () {
       pInput.style.display = "inline";
     }
   };
+
+  slctEvropa.onchange = function () {
+    vlevo.value = null;
+    vpravo.value = null;
+    if (slctEvropa.value == 0) {
+      lvlevo.innerHTML = "";
+      lvpravo.innerHTML = "";
+    } else if (slctEvropa.value == 1) {
+      lvlevo.innerHTML = "€";
+      lvpravo.innerHTML = "Kč";
+    } else if (slctEvropa.value == 2) {
+      lvlevo.innerHTML = "&pound";
+      lvpravo.innerHTML = "Kč";
+    } else if (slctEvropa.value == 3) {
+      lvlevo.innerHTML = "₴";
+      lvpravo.innerHTML = "Kč";
+    } else if (slctEvropa.value == 4) {
+      lvlevo.innerHTML = "Fr.";
+      lvpravo.innerHTML = "Kč";
+    } else if (slctEvropa.value == 5) {
+      lvlevo.innerHTML = "kr";
+      lvpravo.innerHTML = "Kč";
+    }
+  };
+
+  slctZbytek.onchange = function () {
+    vlevo.value = null;
+    vpravo.value = null;
+    if (slctZbytek.value == 0) {
+      lvlevo.innerHTML = "";
+      lvpravo.innerHTML = "";
+    } else if (slctZbytek.value == 1) {
+      lvlevo.innerHTML = "$";
+      lvpravo.innerHTML = "Kč";
+    }
+  };
+
+  function vyberEvropa() {
+    upozorneni.innerHTML = "";
+    if (slctEvropa.value == 0) {
+      upozorneni.innerHTML = "Nevybrali jste si převod!";
+    } else if (slctEvropa.value == 1) {
+      eurkc.meny();
+    } else if (slctEvropa.value == 2) {
+      gbpkc.meny();
+    } else if (slctEvropa.value == 3) {
+      uahkc.meny();
+    } else if (slctEvropa.value == 4) {
+      chfkc.meny();
+    } else if (slctEvropa.value == 5) {
+      sekkc.meny();
+    }
+  }
+
+  function vyberZbytek() {
+    upozorneni.innerHTML = "Nevybrali jste si převod!";
+    if (slctZbytek.value == 0) {
+      upozorneni.innerHTML = "Nevybrali jste si převod!";
+    } else if (slctZbytek.value == 1) {
+      usdkc.meny();
+    }
+  }
 };
