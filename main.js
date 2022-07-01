@@ -51,5 +51,27 @@ window.onload = function () {
     vlevo.value = null;
     vpravo.value = null;
     slctEvropa.value = 0;
+    slctEvropa.style.display = "inline";
+    slctZbytek.style.display = "none";
+    btnEvropa.className = "one aktivni";
+    btnZbytek.className = "two neaktivni";
+    if (pInput.style.display == "none") {
+      pInput.style.display = "inline";
+    }
+  };
+
+  btnZbytek.onclick = function () {
+    lvlevo.innerHTML = null;
+    lvpravo.innerHTML = null;
+    vlevo.value = null;
+    vpravo.value = null;
+    slctZbytek.value = 0;
+    slctEvropa.style.display = "none";
+    slctZbytek.style.display = "inline";
+    btnEvropa.className = "one neaktivni";
+    btnZbytek.className = "two aktivni";
+    if (pInput.style.display == "none") {
+      pInput.style.display = "inline";
+    }
   };
 };
