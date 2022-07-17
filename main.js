@@ -37,6 +37,26 @@ window.onload = function () {
   vlevo.value = null;
   vpravo.value = null;
 
+  vlevo.addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+      if (btnEvropa.className == "one aktivni") {
+        vyberEvropa();
+      } else if (btnZbytek.className == "two aktivni") {
+        vyberZbytek();
+      }
+    }
+  });
+
+  vpravo.addEventListener("keypress", function (event) {
+    if (event.key === "Enter") {
+      if (btnEvropa.className == "one aktivni") {
+        vyberEvropa();
+      } else if (btnZbytek.className == "two aktivni") {
+        vyberZbytek();
+      }
+    }
+  });
+
   vlevo.onfocus = function () {
     vpravo.value = null;
   };
