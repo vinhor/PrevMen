@@ -39,21 +39,15 @@ window.onload = function () {
 
   vlevo.addEventListener("keypress", function (event) {
     if (event.key === "Enter") {
-      if (btnEvropa.className == "one aktivni") {
-        vyberEvropa();
-      } else if (btnZbytek.className == "two aktivni") {
-        vyberZbytek();
-      }
+      vpravo.value = null;
+      btnPrevod.click();
     }
   });
 
   vpravo.addEventListener("keypress", function (event) {
     if (event.key === "Enter") {
-      if (btnEvropa.className == "one aktivni") {
-        vyberEvropa();
-      } else if (btnZbytek.className == "two aktivni") {
-        vyberZbytek();
-      }
+      vlevo.value = null;
+      btnPrevod.click();
     }
   });
 
