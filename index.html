@@ -37,7 +37,13 @@
           <button id="btnEvropa" class="one neaktivni">Evropské</button>
           <button id="btnZbytek" class="two neaktivni">Ostatní</button>
         </div>
+        <!-- doplň nový option value ..., podle místa používání měny -> slctEvropa = evropské, slctZbytek = neevropské -->
+        <!-- ZTML x = odkaz v js souboru -> jkljklj = nepotřebné "hjkhjhjk" = to, na co je odkazováno v js -->
         <select id="slctEvropa">
+          <!-- ZTML 1 =  <option value="x"> 
+          ZTML 2 = value=x>"yy" - zz  
+          ZTML 3 = value=x>yy - "zz"
+          -->
           <option value="0" selected>Vyberte převod</option>
           <option value="1">€ - Kč</option>
           <option value="2">&pound - Kč</option>
@@ -45,6 +51,7 @@
           <option value="4">Fr. - Kč</option>
           <option value="5">kr - Kč</option>
           <option value="6">kn - Kč</option>
+          <option value="7">zł - Kč</option>
         </select>
         <select id="slctZbytek">
           <option value="0" selected>Vyberte převod</option>
