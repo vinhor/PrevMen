@@ -103,7 +103,12 @@ button.aktivni {
   display: none;
 }
 
-#menu {
+.menu {
   display: flex;
+  list-style-type: none;
+}
+
+.malemenu {
+  display: list-item;
   list-style-type: none;
 }
