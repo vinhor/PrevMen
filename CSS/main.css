@@ -30,7 +30,7 @@ body > header {
 }
 body {
   font-family: "Comfortaa light", Ubuntu, Roboto, sans-serif;
-  background: #fefff1;
+  background: #fbffd8;
   color: var(--text);
   text-align: center;
   max-width: 1000px;
