@@ -4,26 +4,8 @@
   border: 2px solid rgb(0, 0, 0);
 }
 
-.chyba {
-  font-size: 5rem;
-  color: rgb(255, 0, 0);
-}
-
-.cervena {
-  color: rgb(255, 0, 0);
-}
-
 .velka {
   font-size: 2rem;
-}
-
-.cerveny-article {
-  border: 1px solid rgb(255, 0, 0);
-  color: rgb(255, 0, 0);
-}
-
-.cerveny-article a img {
-  border: 1px solid rgb(255, 0, 0);
 }
 
 .cerveny-article a:hover img,
@@ -39,23 +21,6 @@
 
 .malatlacitka {
   display: initial;
-}
-
-.cerveny-article {
-  border: 1px solid rgb(255, 0, 0);
-  color: rgb(255, 0, 0);
-}
-
-.cerveny-article a img {
-  border: 1px solid rgb(255, 0, 0);
-  border-radius: 2rem;
-  margin: 1rem;
-  padding: 0.5rem;
-}
-
-.cerveny-article a:hover img,
-.cerveny-article a:active img {
-  border: 1px solid #0004fd;
 }
 
 .hlavicka-odkazy {
