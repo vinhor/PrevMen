@@ -46,6 +46,19 @@
   grid-row: 1;
 }
 
+.menu {
+  display: flex;
+  list-style-type: none;
+}
+
+.malemenu {
+  display: list-item;
+  list-style-type: none;
+}
+h1.malemenu {
+  margin-right: 0;
+}
+
 /* Speciální */
 
 button.neaktivni:hover,
@@ -73,15 +86,6 @@ button.aktivni {
   display: none;
 }
 
-.menu {
-  display: flex;
-  list-style-type: none;
-}
-
-.malemenu {
-  display: list-item;
-  list-style-type: none;
-}
-h1.malemenu {
-  margin-right: 0;
+#h1 {
+  text-transform: none;
 }
