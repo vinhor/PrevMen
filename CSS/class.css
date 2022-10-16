@@ -10,7 +10,7 @@
 
 .cerveny-article a:hover img,
 .cerveny-article a:active img {
-  border: 1px solid #0004fd;
+  border: 1px solid #3a82a3;
 }
 
 .tlacitka {
@@ -45,21 +45,21 @@
 
 button.neaktivni:hover,
 button.neaktivni:active {
-  border-color: #0004fd;
+  border-color: #3a82a3;
   cursor: pointer;
-  color: #0004fd;
+  color: #3a82a3;
 }
 
 button.aktivni {
   border-color: rgba(0, 0, 0, 0.35);
   color: rgba(0, 0, 0, 0.35);
-  background-color: #ffffff;
+  background-color: #fbffd8;
   cursor: not-allowed;
 }
 
 .hlavicka-odkazy:hover,
 .hlavicka-odkazy:active {
-  border-bottom-color: #0004fd;
+  border-bottom-color: #3a82a3;
 }
 
 /* IDs */
