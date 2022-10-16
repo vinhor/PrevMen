@@ -14,12 +14,19 @@
   font-family: "Comfortaa light";
   src: url(./Comfortaa-Light.ttf);
 }
+
+h1 {
+  font-size: 2.5rem;
+  font-weight: normal;
+  margin: 0 2rem 0 0;
+}
+
 body > header {
-  padding-bottom: 1rem;
   display: flex;
   height: 100%;
   justify-content: center;
   text-transform: uppercase;
+  font-size: 2rem;
 }
 body {
   font-family: "Comfortaa light", Ubuntu, Roboto, sans-serif;
@@ -40,11 +47,6 @@ p,
 li {
   font-size: 1.5rem;
   margin: 0.5rem;
-}
-
-h1 {
-  font-size: 2.5rem;
-  font-weight: normal;
 }
 
 h2 {
