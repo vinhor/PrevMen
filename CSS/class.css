@@ -1,16 +1,16 @@
 /* Klasické */
 
 .velky-ramecek {
-  border: 2px solid rgb(149, 153, 158);
+  border: 2px solid rgb(0, 0, 0);
 }
 
 .chyba {
   font-size: 5rem;
-  color: rgb(201, 51, 51);
+  color: rgb(255, 0, 0);
 }
 
 .cervena {
-  color: rgb(201, 51, 51);
+  color: rgb(255, 0, 0);
 }
 
 .velka {
@@ -18,17 +18,17 @@
 }
 
 .cerveny-article {
-  border: 1px solid rgb(201, 51, 51);
-  color: rgb(201, 51, 51);
+  border: 1px solid rgb(255, 0, 0);
+  color: rgb(255, 0, 0);
 }
 
 .cerveny-article a img {
-  border: 1px solid rgb(201, 51, 51);
+  border: 1px solid rgb(255, 0, 0);
 }
 
 .cerveny-article a:hover img,
 .cerveny-article a:active img {
-  border: 1px solid #0f98ba;
+  border: 1px solid #0004fd;
 }
 
 .tlacitka {
@@ -42,12 +42,12 @@
 }
 
 .cerveny-article {
-  border: 1px solid rgb(201, 51, 51);
-  color: rgb(201, 51, 51);
+  border: 1px solid rgb(255, 0, 0);
+  color: rgb(255, 0, 0);
 }
 
 .cerveny-article a img {
-  border: 1px solid rgb(201, 51, 51);
+  border: 1px solid rgb(255, 0, 0);
   border-radius: 2rem;
   margin: 1rem;
   padding: 0.5rem;
@@ -55,7 +55,13 @@
 
 .cerveny-article a:hover img,
 .cerveny-article a:active img {
-  border: 1px solid #0f98ba;
+  border: 1px solid #0004fd;
+}
+
+.hlavicka-odkazy {
+  text-decoration: none;
+  border-bottom: 1px solid rgb(0, 0, 0);
+  font-size: 2rem;
 }
 
 /* Tlačítka */
@@ -74,20 +80,38 @@
 
 button.neaktivni:hover,
 button.neaktivni:active {
-  border-color: #0f98ba;
+  border-color: #0004fd;
   cursor: pointer;
-  color: #0f98ba;
+  color: #0004fd;
 }
 
 button.aktivni {
-  border-color: rgba(149, 153, 158, 0.35);
-  color: rgba(149, 153, 158, 0.35);
-  background-color: #0b0e31;
+  border-color: rgba(0, 0, 0, 0.35);
+  color: rgba(0, 0, 0, 0.35);
+  background-color: #ffffff;
   cursor: not-allowed;
+}
+
+.hlavicka-odkazy:hover,
+.hlavicka-odkazy:active {
+  border-bottom-color: #0004fd;
 }
 
 /* IDs */
 
 #pInput {
   display: none;
+}
+
+.menu {
+  display: flex;
+  list-style-type: none;
+}
+
+.malemenu {
+  display: list-item;
+  list-style-type: none;
+}
+h1.malemenu {
+  margin-right: 0;
 }
