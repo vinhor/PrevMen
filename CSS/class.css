@@ -112,3 +112,6 @@ button.aktivni {
   display: list-item;
   list-style-type: none;
 }
+h1.malemenu {
+  margin-right: 0;
+}

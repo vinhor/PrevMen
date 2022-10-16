@@ -27,6 +27,7 @@ window.onload = function () {
   let br = document.createElement("br");
   let pInput = document.getElementById("pInput");
   let menu = document.getElementById("menu");
+  let h1 = document.getElementById("h1");
 
   const requestURL =
     "https://api.exchangerate.host/latest?base=CZK&symbols=EUR,USD,GBP,UAH,CHF,SEK,JPY,CAD,AUD,MXN,BRL,HRK,PLN";
@@ -89,6 +90,7 @@ window.onload = function () {
 
   if (window.innerWidth < 1060) {
     menu.className = "malemenu";
+    h1.className = "malemenu";
   } else {
     menu.className = "menu";
   }
