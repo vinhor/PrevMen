@@ -135,6 +135,11 @@ strong {
   font: "Comfortaa bold", Ubuntu, Roboto, sans-serif;
 }
 
+footer {
+  font-size: 1rem;
+  text-align: center;
+  color: #0000007e;
+}
 /*  Speciální  */
 
 input:focus {
