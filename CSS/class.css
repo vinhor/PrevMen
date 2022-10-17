@@ -69,8 +69,8 @@ button.neaktivni:active {
 }
 
 button.aktivni {
-  border-color: rgba(0, 0, 0, 0.35);
-  color: rgba(0, 0, 0, 0.35);
+  border-color: #3a82a3;
+  color: #3a82a3;
   background-color: #eefcd3;
   cursor: not-allowed;
 }
