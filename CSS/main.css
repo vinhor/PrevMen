@@ -98,13 +98,6 @@ input {
   max-width: 8rem;
 }
 
-a img {
-  border: 1px solid var(--text);
-  border-radius: 2rem;
-  margin: 1rem;
-  padding: 0.5rem;
-}
-
 strong h2 {
   font-weight: bold;
 }
@@ -150,12 +143,8 @@ input:focus {
   text-align: center;
 }
 
-a:hover img,
-a:active img {
-  border: 1px solid var(--hover);
-}
-
 a:hover,
 a:active {
   color: var(--hover);
+  border-bottom-color: var(--hover);
 }
